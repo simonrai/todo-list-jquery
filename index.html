@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-	
-	<title>Teux Deux List</title>
+<html lang="en">
+  <head>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js.js" ></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+    <title>TeuxDeux</title>
 
-<body>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js.js" ></script>
 
-Name: <input type="text" name="full-name" id="full-name">
-<input type="submit" value="Save" id="save-btn">
-    
-<div id="output">
-  
-</div>
+  </head>
 
-</body>
+  <body>
+  	<div class="navbar">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  	
+  	<div class="container">
+    	<h1>TeuxDeux <span class="label label-default">Beta</span></h1>
+  	</div>
+		</nav>
+		</div>
+
+		<div class="jumbotron">
+  	<div class="container">
+      <h3>Hello there!</h3>
+  		<p>TeuxDeux is a simple way to manage your life and all the things you have to do. We have categories for different parts of your life, and you can prioritize things to keep the stress level low. Now get shit done!</p>
+  		<p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+  	</div>
+		</div>
+
+		<div class="container">
+
+		<div>
+
+		Task: <input type="text" name="full-name" id="full-name">
+    <input type="submit" value="Save" id="save-btn">  
+
+		<button type="button" class="btn btn-success">Low</button>
+    <button type="button" class="btn btn-warning">Medium</button>
+    <button type="button" class="btn btn-danger">High</button>
+
+    </div>
+
+    <div class="row">
+    <div class="col-md-4"><h2>Work</h2></div>
+    <div class="col-md-4"><h2>School</h2></div>
+    <div class="col-md-4"><h2>Home</h2></div>
+    </div>
+
+    </div>
+
+  </body>
 </html>
