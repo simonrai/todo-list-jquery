@@ -15,12 +15,15 @@
   </head>
 
   <body>
+
   	<div class="navbar">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   	
   	<div class="container">
-    	<h1>TeuxDeux <span class="label label-default">Beta</span></h1>
-  	</div>
+    
+    <h1 style="padding-bottom: 10px;">TeuxDeux <span class="label label-default">Beta</span></h1>
+  	
+    </div>
 		</nav>
 		</div>
 
@@ -28,27 +31,30 @@
   	<div class="container">
       <h3>Hello there!</h3>
   		<p>TeuxDeux is a simple way to manage your life and all the things you have to do. We have categories for different parts of your life, and you can prioritize things to keep the stress level low. Now get shit done!</p>
-  		<p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+  		<p><a href="about.html" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
   	</div>
 		</div>
 
 		<div class="container">
 
-		<div>
-
-		Task: <input type="text" name="full-name" id="full-name">
-    <input type="submit" value="Save" id="save-btn">  
-
-		<button type="button" class="btn btn-success">Low</button>
-    <button type="button" class="btn btn-warning">Medium</button>
-    <button type="button" class="btn btn-danger">High</button>
-
+    <div class="row">
+		  
+      <div class="col-lg-6">
+        <input type="text" name="task" id="task" class="form-control" placeholder="Task">
+      </div>
+      
+      <div class="col-lg-6">
+		    <button type="submit" class="btn btn-success" id="work-btn">Work</button>
+        <button type="submit" class="btn btn-warning" id="school-btn">School</button>
+        <button type="submit" class="btn btn-primary" id="home-btn">Home</button>
+      </div>
+    
     </div>
 
     <div class="row">
-    <div class="col-md-4"><h2>Work</h2></div>
-    <div class="col-md-4"><h2>School</h2></div>
-    <div class="col-md-4"><h2>Home</h2></div>
+    <div class="col-md-4" id="work-tasks"><h2>Work</h2></div>
+    <div class="col-md-4" id="school-tasks"><h2>School</h2></div>
+    <div class="col-md-4" id="home-tasks"><h2>Home</h2></div>
     </div>
 
     </div>

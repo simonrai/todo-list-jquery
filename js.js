@@ -1,7 +1,23 @@
 $(function() {
-  $('#save-btn').click(function() {
-    var input = $("#full-name");
+  $('#work-btn').click(function() {
+    var input = $("#task");
     var data = input.val();
-    $('#output').append("<p>" + data +"</p>");
+    $('#work-tasks').append("<p>" + data +"</p>");
+  });
+});
+
+$(function() {
+  $('#school-btn').click(function() {
+    var input = $("#task");
+    var data = input.val();
+    $('#school-tasks').append("<p>" + data +"</p>");
+  });
+});
+
+$(function() {
+  $('#home-btn').click(function() {
+    var input = $("#task");
+    var data = input.val();
+    $('#home-tasks').append("<p>" + data +"</p>");
   });
 });
