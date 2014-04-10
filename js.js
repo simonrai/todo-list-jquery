@@ -20,7 +20,7 @@ $(function() {
   $('#school-btn').click(function() {
     var input = $("#task");
     var data = input.val();
-    $('#school-tasks').append("<p class=\"single-task\">" + data + "</p>");
+    $('#school-tasks').append("<p class=\"delete\">" + data + "</p>");
     $('#task').val("");
     $('#school-tasks').on('click', '.delete', function() {
       $(this).css("text-decoration", "line-through");
