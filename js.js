@@ -1,3 +1,6 @@
+
+// Work Tasks - add, strikethrough
+
 $(function() {
   $('#work-btn').click(function() {
     var input = $("#task");
@@ -5,22 +8,36 @@ $(function() {
     $('#work-tasks').append("<p class=\"delete\">" + data + "</p>");
     $('#task').val("");
     $('#work-tasks').on('click', '.delete', function() {
-  	$(this).remove();
+  		$(this).css("text-decoration", "line-through");
 	});
   });
 });
+
+
+// School Tasks - add, strikethrough, delete // *NOT WORKING*
 
 $(function() {
   $('#school-btn').click(function() {
     var input = $("#task");
     var data = input.val();
-    $('#school-tasks').append("<p class=\"delete\">" + data + "</p>");
+    $('#school-tasks').append("<p class=\"single-task\">" + data + "</p>");
     $('#task').val("");
-    $('#school-tasks').on('click', '.delete', function() {
-  	$(this).css("text-decoration", "line-through");
+
+    $('#school-tasks').on('click', '.single-task', function() {
+
+    	var tasky = $(this);
+
+    	if (!tasky.hasClass('.completed-task')) {
+    		tasky.addClass('.completed-task');
+    	} else {
+    		tasky.remove();
+    	}
+    });
   });
 });
-});
+
+
+// Home Tasks - add, delete
 
 $(function() {
   $('#home-btn').click(function() {
@@ -29,7 +46,7 @@ $(function() {
     $('#home-tasks').append("<p class=\"delete\">" + data + "</p>");
     $('#task').val("");
     $('#home-tasks').on('click', '.delete', function() {
-  	$(this).remove();
+  		$(this).remove();
   });
 });
 });
