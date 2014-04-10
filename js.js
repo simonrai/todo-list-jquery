@@ -22,20 +22,11 @@ $(function() {
     var data = input.val();
     $('#school-tasks').append("<p class=\"single-task\">" + data + "</p>");
     $('#task').val("");
-
-    $('#school-tasks').on('click', '.single-task', function() {
-
-    	var tasky = $(this);
-
-    	if (!tasky.hasClass('.completed-task')) {
-    		tasky.addClass('.completed-task');
-    	} else {
-    		tasky.remove();
-    	}
-    });
+    $('#school-tasks').on('click', '.delete', function() {
+      $(this).css("text-decoration", "line-through");
+  });
   });
 });
-
 
 // Home Tasks - add, delete
 
@@ -46,7 +37,7 @@ $(function() {
     $('#home-tasks').append("<p class=\"delete\">" + data + "</p>");
     $('#task').val("");
     $('#home-tasks').on('click', '.delete', function() {
-  		$(this).remove();
+      $(this).css("text-decoration", "line-through");
   });
 });
 });
